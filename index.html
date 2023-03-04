@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Joshua Yang</title>
+
+    <style type="text/css">
+        @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700');
+
+        #about {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        html {
+            font-size: 18px;
+            line-height: 1.4;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            color: #3d464d;
+            font-size: 1em;
+        }
+
+        h1, h3 {
+            line-height: 1em;
+            text-rendering: optimizelegibility;
+        }
+
+        @media (max-width: 500px) {
+            html {
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 350px) {
+            html {
+                font-size: 12px;
+            }
+        }
+
+        @media (max-width: 300px) {
+            html {
+                font-size: 10px;
+            }
+        }
+
+        .content {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            overflow: scroll;
+
+            box-shadow: inset 0 0 100px 10px rgba(0, 0, 0, .08);
+            -webkit-box-shadow: inset 0 0 100px 10px rgba(0, 0, 0, .08);
+            -moz-box-shadow: inset 0 0 100px 10px rgba(0, 0, 0, .08);
+            -o-box-shadow: inset 0 0 100px 10px rgba(0, 0, 0, .08);
+        }
+
+        .av {
+            margin: 2em auto;
+            width: 14em;
+            height: 14em;
+            text-align: center;
+        }
+
+        .av .profile {
+            background-size: 100%;
+            height: 12em;
+            width: 12em;
+            display: inline-block;
+        }
+
+        .headline {
+            text-align: center;
+        }
+
+        .headline h1 {
+            font-size: 4em;
+            color: #2b2e30;
+            margin: 0;
+            font-weight: 500;
+        }
+
+        .headline h3 {
+            margin: 0;
+            font-size: 2em;
+            font-weight: 100;
+            opacity: .6;
+        }
+
+        .swe {
+            color: #8e3791;
+        }
+
+        .main-nav {
+            margin: 2em auto 0 auto;
+            text-align: center;
+            font-weight: 300;
+        }
+
+        .main-nav > ul {
+            padding: 0;
+        }
+
+        .main-nav > ul > li {
+            display: inline-block;
+            vertical-align: middle;
+
+            -webkit-transition: all .1s ease;
+            -moz-transition: all .1s ease;
+            -o-transition: all .1s ease;
+            transition: all .1s ease;
+        }
+
+        .main-nav > ul > li:first-child {
+            margin-left: 0;
+        }
+
+        .main-nav > ul > li:hover {
+            margin-top: -10px;
+            font-weight: 500;
+        }
+
+        .main-nav > ul > li > a {
+            padding: 0;
+            margin-top: -32px;
+            text-decoration: none;
+            color: #212121;
+        }
+
+        .main-nav li.abt {
+            width: 5em;
+        }
+
+        .main-nav li.git {
+            width: 5em;
+        }
+
+        .main-nav li.contact {
+            width: 5em;
+        }
+
+        .about {
+            text-align: center;
+            font-size: 0.9em;
+            font-weight: 100;
+        }
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+        }
+
+        #about {
+            opacity: 0;
+            visibility: hidden;
+            padding: 0 3em;
+
+            -webkit-transition: all 1s ease;
+            -moz-transition: all 1s ease;
+            -o-transition: all 1s ease;
+            transition: all 1s ease;
+        }
+
+        #about:target {
+            opacity: .9;
+            visibility: visible;
+        }
+
+        .sm-container {
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        .sm-container.icon-links {
+            height: 2em;
+            font-size: 18px;
+        }
+
+        .sm-icon {
+            background-color: #212121;
+            height: 2em;
+            width: 2em;
+            border-radius: 2em;
+            display: inline-block;
+
+            -webkit-transition: opacity .1s ease;
+            -moz-transition: opacity .1s ease;
+            -o-transition: opacity .1s ease;
+            transition: opacity .1s ease;
+        }
+
+        .sm-icon:hover {
+            opacity: .4;
+        }
+
+        .sm-icon img {
+            display: block;
+            margin: .3em auto;
+        }
+
+        p.resume-link {
+            margin: 1em;
+            font-size: .9em;
+            text-decoration: none;
+            color: #212121;
+        }
+
+        p.resume-link a {
+            text-decoration: none;
+            color: #212121;
+        }
+
+        p.resume-link a:hover {
+            opacity: .5;
+        }
+
+        p.copyright {
+            margin: 1em;
+            font-size: .6em;
+            text-decoration: none;
+            color: #212121;
+        }
+    </style>
+</head>
+
+<body>
+<div class="content">
+    <div class="av">
+        <img src="images/tempav.png" alt="profile pic" class="center">
+        <br>
+        <div class="profile"></div>
+    </div>
+    
+
+    <div class="headline">
+        <h1 class="headline">Hi. I'm Joshua Yang.</h1>
+        <p></p>
+        <h3 class="swe">Software Engineer</h3>
+        <p>I specialize in developing and delivering outstanding digital experiences. I will be working at
+            <a href="https://healthedge.com/">HealthEdge</a> following my graduation. I appreciate you being here!
+        </p>
+    </div>
+
+    <nav class="main-nav">
+        <ul>
+            <li class="abt">
+                <a href="#about" rel="noopener">About</a>
+            </li>
+            <li class="git">
+                <a href="https://github.com/joshuajyang" rel="noopener" target="_blank">GitHub</a>
+            </li>
+            <li class="contact">
+                <a href="mailto:joshuajyang@vt.edu?Subject=Contact%20Form" rel="noopener"
+                   target="_blank">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="about" class="about">
+        <p>Hello! My name is <strong>Joshua Yang </strong> and I am passionate about all facets of Software
+            Development. I am currently pursuing my B.S. in Computer Science at Virginia Tech. As a Software
+            Engineer, I look forward to building high-quality and scalable products whilst learning and
+            utilizing the latest tools and technologies.
+        </p>
+        <p>Aside from developing, I love to play tennis, football, basketball, and lift weights. I am also 
+            a freelance barber under the name YangCutz.
+        </p>
+        <p></p>
+    </div>
+
+    <div class="sm-container icon-links">
+        <div class="sm-icon">
+            <a href="https://www.linkedin.com/in/joshuajyang/" rel="noopener" target="_blank">
+                    <span>
+                        <img alt="LinkedIn icon" src="images/linkedin-48.png" height="24px" width="24px"/>
+                    </span>
+            </a>
+        </div>
+        <div class="sm-icon">
+            <a href="https://www.instagram.com/joshuajyang/" rel="noopener" target="_blank">
+                    <span>
+                        <img alt="Instagram icon" src="images/instagram-48.png" height="24px" width="24px"/>
+                    </span>
+            </a>
+        </div>
+    </div>
+
+    <div class="sm-container">
+        <p class="resume-link">
+            <a target="_blank" href="files/Yang_Resume.pdf" rel="noopener">My Resume</a>
+        </p>
+    </div>
+    <br>
+    <br>
+    <div class="sm-container">
+        <p class="copyright">
+            <a target="_blank" rel="noopener">Created by Joshua Yang</a>
+            <br>
+            <a target="_blank" rel="noopener">All rights reserved. &copy;</a>
+        </p>
+    </div>
+    <!-- <footer>
+        <ul id="copyright">
+            <li>Created by Joshua Yang</li>
+            <li>All rights reserved. &copy;</li>
+        </ul>
+    </footer> -->
+</div>
+
+</body>
+</html>
